@@ -47,10 +47,12 @@ nav {
 .slider {
   background-image: url("./img/wall.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
 }
 .sliderWrapper {
   display: flex;
   width: 500vw;
+  transition: all 1.5s ease-in-out;
 }
 .sliderItem {
   width: 100vw;
@@ -109,6 +111,7 @@ nav {
 .buyButton:hover {
   color: black;
   background-color: white;
+  transition: all 1s ease-out;
 }
 .sliderItem:nth-child(1) .sliderBg {
   background-color: #369e62;
@@ -125,7 +128,7 @@ nav {
   background-color: cornflowerblue;
 }
 .sliderItem:nth-child(5) .sliderBg {
-  background-color: lime;
+  background-color: rgb(213, 199, 124);
 }
 
 .sliderItem:nth-child(1) .sliderPrice {
@@ -141,5 +144,5 @@ nav {
   color: cornflowerblue;
 }
 .sliderItem:nth-child(5) .sliderPrice {
-  color: lime;
+  color: rgb(213, 199, 124);
 }
