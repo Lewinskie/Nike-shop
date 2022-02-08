@@ -130,3 +130,17 @@ currentProductSizes.forEach((size, index) => {
     size.style.color = "white";
   });
 });
+
+//pop up payment details page
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+productButton.addEventListener("click", () => {
+  payment.style.display = "flex";
+});
+
+//close payment details page
+close.addEventListener("click", () => {
+  payment.style.display = "none";
+});
